@@ -22,14 +22,14 @@ class Triangle
       raise TriangleError
       end
     end
-
+  
+  class TriangleError < StandardError
+  def message
+    "This is an illegal triangle"
+  end
+end
 
   end
   
 end
 
-class TriangleError < StandardError
-  def message
-    "This is an illegal triangle"
-  end
-end
